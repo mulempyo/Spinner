@@ -17,7 +17,8 @@ class MainActivity : AppCompatActivity() {
 
         val data = listOf("- 선택하세요-","1월","2월","3월","4월","5월","6월")
         //컨테이너: 데이터를 동적으로 출력할 때,데이터를 반복적으로 표시할 때 사용.
-        val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,data)
+        val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,data) //simple_list_item1 레이아웃은 텍스트뷰1개만을 가지고 있는 특수한 레이아웃입니다.
+        //ArrayAdapter와 같은 기본 어댑터에서 사용하면 데이터에서 문자열 1개를 꺼내서 레이아웃에 그려줍니다
         binding.spinner.adapter=adapter
         binding.spinner.onItemSelectedListener= object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(p0: AdapterView<*>?) {}
