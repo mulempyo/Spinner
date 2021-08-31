@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Spinner application</string>
+    <string name="string_01">선택결과</string>
+</resources>
