@@ -22,7 +22,8 @@ class MainActivity : AppCompatActivity() {
         binding.spinner.onItemSelectedListener= object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(p0: AdapterView<*>?) {}
 
-            override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) {
+            override fun onItemSelected(p0: AdapterView<*>?, p1: View?, p2: Int, p3: Long) { //simple_list_item1 레이아웃은 텍스트뷰 1개만을 가지고 있는 특수한 레이아웃입니다.
+                //ArrayAdapter와 같은 기본 어댑터에 사용하면 입력된 데이터에서 문자열 1개를 꺼내서 레이아웃에 그려줍니다.
                 binding.result.text= data[p2] //책에는 data.get(p2)라 나와있다.
             }
         }
