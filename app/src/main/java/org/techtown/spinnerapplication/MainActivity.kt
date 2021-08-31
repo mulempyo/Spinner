@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        val data = listOf("- 선택하세요-","1월","2월","3월","4월","5월","6월")//리사이클러뷰:컨테이너이고 목록을 화면에 출력할때 쓴다.
+        val data = listOf("- 선택하세요-","1월","2월","3월","4월","5월","6월")
         //컨테이너: 데이터를 동적으로 출력할 때,데이터를 반복적으로 표시할 때 사용.
         val adapter = ArrayAdapter(this,android.R.layout.simple_list_item_1,data)
         binding.spinner.adapter=adapter
